@@ -1,4 +1,6 @@
-<?php if ($_SESSION['logeado']=true) {?> 
+<?php
+session_start(); 
+if ($_SESSION['logeado']) {?> 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,8 +20,7 @@
 <div class="container">
 <h1 class="jumbotron text-center">¡Bienvenido Admin!</h1>
 	<div class="row">
-	<div class="btn-group">
-		<a href="" class="btn btn-success">Compra/ventas</a>
+	<div class="btn-group-justified">
 		<a href="" class="btn btn-success">Indumentaria</a>
 		<a href="" class="btn btn-success">Gastronomía</a>
 		<a href="" class="btn btn-success">Remiserias</a>
@@ -30,7 +31,15 @@
 		<a href="" class="btn btn-success">Educación</a>
 	</div>
 	</div>
+	<a href="logout.php" title="">hola</a>
 </div>
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left">&copy Todos los derechos reservados
+           <a href="https://plehma.github.io/Cv_PlehmA/" target="_blank" >Andrés Plehm.</a>
+      </p>
+    </div>
+    </div>
 	<?php require('includes/scripts.php'); ?>
 </body>
 </html>

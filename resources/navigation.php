@@ -5,8 +5,7 @@
       <a class="navbar-brand" href="index.php">Clasificados Sm <img src="images\escudo_sm.png" alt="Escudo de San Martin en los Andes" class="img-responsive" style="height:30px; width: 30px; float: right; padding-left: 10px;"></a>
     </div>
     <ul class="nav navbar-nav">
-          <li class="active"><a href="index.php">Home</a></li>
-          <li><a href="compra-venta.php">Compra/Ventas</a></li>
+        <li class="active"><a href="index.php">Home</a></li>
         <li><a href="cloth.php">Indumentaria</a></li>
         <li><a href="gastronomia.php">Gastronomía</a></li>
         <li><a href="remiserias.php">Remiserias</a></li>
