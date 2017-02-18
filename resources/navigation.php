@@ -6,6 +6,7 @@
     </div>
     <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
+        <li><a href="compraven.php">Compra/Venta</a></li>
         <li><a href="cloth.php">Indumentaria</a></li>
         <li><a href="gastronomia.php">Gastronomía</a></li>
         <li><a href="remiserias.php">Remiserias</a></li>
@@ -17,7 +18,7 @@
         <li><a href="muni.php">Municipalidad</a></li>
         <li><a href="contacto.php">Contactenos</a></li>
     </ul>
-    <p style="color: gray; float: right; padding-top: 15px;"><?php echo FECHA; ?></p>
+    <p style="color: gray; float: right; margin-top: 16px; color: green;"><?php echo FECHA; ?></p>
   </div>
 </nav>
 </div>

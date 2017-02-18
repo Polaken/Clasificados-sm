@@ -21,6 +21,7 @@
 </div>
 <br>
 <hr>
+<a href="" title="" onclick="moverDerecha();"></a>
 <?php require_once('resources/carousel.php'); ?>
 <?php require_once('resources/footer.php') ?>
 </div>

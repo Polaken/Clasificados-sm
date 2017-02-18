@@ -31,13 +31,13 @@ if ($_SESSION['logeado']) {?>
 		<a href="" class="btn btn-success">Educación</a>
 	</div>
 	</div>
-	<a href="logout.php" title="">hola</a>
 </div>
 <div class="navbar navbar-inverse navbar-fixed-bottom">
     <div class="container">
       <p class="navbar-text pull-left">&copy Todos los derechos reservados
            <a href="https://plehma.github.io/Cv_PlehmA/" target="_blank" >Andrés Plehm.</a>
       </p>
+      <a href="logout.php" title="" class="btn btn-danger pull-right" style="margin-top: 5px;">Logout</a>
     </div>
     </div>
 	<?php require('includes/scripts.php'); ?>
