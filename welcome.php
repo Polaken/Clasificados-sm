@@ -27,7 +27,7 @@ if ($_SESSION['logeado']) {?>
 		<a href="" class="btn btn-success">Centro de paseos</a>
 		<a href="" class="btn btn-success">Eventos</a>
 		<a href="" class="btn btn-success">Empleos</a>
-		<a href="" class="btn btn-success">Farmacias</a>
+		<a href="ingresos/ingfarma.php" class="btn btn-success">Farmacias</a>
 		<a href="" class="btn btn-success">Educación</a>
 	</div>
 	</div>
