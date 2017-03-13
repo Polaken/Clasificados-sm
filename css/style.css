@@ -1,14 +1,24 @@
 body
 {
 	font-family: 'Rambla', sans-serif;
-	height:1000px;
+	height:1500px;
 	margin-top: 50px;
+	background-color: #F5DEB3;
 }
 a
 {
- text-decoration: none;
+ 	text-decoration: none;
 }
 footer
 {
 	padding-top: 60px;
+	margin-top: 50px;
+}
+td
+{
+	font-size: 17px;
+}
+h1
+{
+	font-size: 40px;
 }

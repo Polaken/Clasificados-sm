@@ -18,7 +18,7 @@ if ($row['@valor_existe']==0)
 }
 	else
 			{
-				session_start();
+				session_start(['cookie_lifetime' => 1,]);
 				$_SESSION['time']=date('H:i:s');
 				$_SESSION['username']=$username;
 				$_SESSION['logeado']=true;

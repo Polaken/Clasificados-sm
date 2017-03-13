@@ -31,6 +31,15 @@ if ($_SESSION['logeado']) {?>
 		<a href="" class="btn btn-success">Educación</a>
 	</div>
 	</div>
+  <div class="container center-block">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    <h4 class="text-center">Selecciona imagen para subir:</h4>
+    <hr>
+    <input type="file" name="fileToUpload" id="fileToUpload" class="btn btn-info btn-lg">
+    <br>
+    <input type="submit" value="Upload Image" name="submit" class="btn btn-info btn-lg">
+</form>
+  </div>
 </div>
 <div class="navbar navbar-inverse navbar-fixed-bottom">
     <div class="container">
