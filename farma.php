@@ -16,6 +16,7 @@
     $stmt = $con -> query($sql);
     $results = $stmt -> fetch_all();
     //var_dump($results);
+    $sql ="LIMIT 0,5";
 		
   ?>
   <h1 class="jumbotron text-center">Farmacias</h1>

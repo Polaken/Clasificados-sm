@@ -62,15 +62,6 @@ if ($_SESSION['logeado']) {
   </div>
 </div>
 
-<!-- File Button --> 
-<div class="form-group">
-  <label class="col-md-4 control-label" for="fotoArchivo">Imagen</label>
-  <div class="col-md-4">
-  <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-    <input id="fotoArchivo" name="fotoArchivo" class="input-file" type="file">
-  </div>
-</div>
-
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="mapa">Mapa</label>  
