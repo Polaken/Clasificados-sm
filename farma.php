@@ -6,22 +6,40 @@
 <body>
 <div class="container">
   <?php require_once('resources/navigation.php'); ?>
+  
   <?php
+
     session_start();
 	 	header('Content-Type: text/html;charset=utf-8');
 		include_once ('includes/bdd.php');
 		$con = crearConexion();
 		$con -> set_charset("utf-8");
-		$sql  = "SELECT * FROM farmacias";
-    $stmt = $con -> query($sql);
-    $results = $stmt -> fetch_all();
+    #$sql  = "SELECT * FROM farmacias";
+    #$stmt = $con -> query($sql);
+    #$results = $stmt -> fetch_all();
+    $per_page = 5;
+
+    if (isset($_GET['page'])) {
+      $page = $_GET['page'];
+    }else{
+      $page = 1;
+    }
+    
+    $start = ($page - 1) * $per_page;
+
+    $sql = "SELECT * FROM farmacias LIMIT $start, $per_page";
+
+    $results = mysqli_query($con, $sql);
+
+
+
+
     //var_dump($results);
-    $sql ="LIMIT 0,5";
-		
+
   ?>
-  <h1 class="jumbotron text-center">Farmacias</h1>
+  <h1 class="jumbotron text-center animated fadeInLeft">Farmacias  <i class="fa fa-medkit" aria-hidden="true" style="color: red;"></i></h1>
   <div class="row table-responsive">
-  <table class="table" id="myTable">
+  <table class="table" id="table">
   <thead>
     <tr>
       <th>Nombre</th>
@@ -31,29 +49,49 @@
       <th>¿Donde se encuentra?</th>
     </tr>
   </thead>
-  <?php 
-  foreach ($results as $rs)
-  {
-  ?>
   <tbody>
+  <?php while ($row = mysqli_fetch_assoc($results)) { ?>
     <tr>
-      <td><?php echo $rs[1]; ?></td>
-      <td><?php echo $rs[2]; ?></td>
-      <td><?php echo $rs[3]; ?></td>
-      <td><img src="<?php echo $rs[4]; ?>" alt="" style="width: 200px; height: 200px; "></td>
-      <td><?php echo $rs[5]; ?></td>
-        <?php } ?>
+      <td><?php echo $row['nombre']; ?></td>
+      <td><?php echo $row['direccion']; ?></td>
+      <td><?php echo $row['telefono']; ?></td>
+      <td><img src="<?php echo $row['foto']; ?>" alt="" style="width: 100px; height: 100px; " class="img-circle animated zoomIn"></td>
+      <td><a href="<?php echo $row['mapa']; ?>" title="" style="text-decoration: none; color: #fff"><button type="button" class="btn btn-info btn-sm center-block animated fadeInRight" >Mapa</button></a></td>
+    </tr>
+    <?php }; ?>
   </tbody>
   </table>
+  <div>
+    <?php 
+    $sql = "SELECT * FROM farmacias";
 
-  
+    $results = mysqli_query($con, $sql);
+
+    $total_regs = mysqli_num_rows($results);
+
+    $total_pages = ceil($total_regs / $per_page);
+
+    echo "<ul class='pager'>";
+    echo "<li><a href='farma.php?page=1'>".'Primera'."</a></li>";
+    echo "<li><a href='farma.php?page=$total_pages'>".'Ultima'."</a></li>";
+    echo "</ul>";
+    echo "<nav aria-label='Page navigation' id='div1'>";
+    echo "<ul class='pager'>";
+
+    for ($i = 1; $i<=$total_pages; $i++) {
+      echo "<li><a href='farma.php?page=".$i."'>".$i."</a></li>";
+    }
+
+    echo "</ul>";
+    echo "</nav>";
+    ?>
+    
   </div>
-  
-  
+  </div>
 </div>
+
 <?php require_once('resources/footer.php') ?>
 </div>
 <?php require_once('includes/scripts.php'); ?>
-
 </body>
 </html>

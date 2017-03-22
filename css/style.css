@@ -1,9 +1,10 @@
 body
 {
 	font-family: 'Rambla', sans-serif;
-	height:1500px;
-	margin-top: 50px;
 	background-color: #F5DEB3;
+	margin: 0;
+    padding: 0;
+    padding-bottom: 70px;
 }
 a
 {
@@ -11,8 +12,8 @@ a
 }
 footer
 {
-	padding-top: 60px;
-	margin-top: 50px;
+	margin: 0;
+    padding: 0;
 }
 td
 {

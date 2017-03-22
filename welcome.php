@@ -15,20 +15,25 @@ if ($_SESSION['logeado']) {?>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   	<link href="https://fonts.googleapis.com/css?family=Rambla:400i,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
 <div class="container">
 <h1 class="jumbotron text-center">¡Bienvenido Admin!</h1>
 	<div class="row">
-	<div class="btn-group-justified">
-		<a href="" class="btn btn-success">Indumentaria</a>
-		<a href="" class="btn btn-success">Gastronomía</a>
-		<a href="" class="btn btn-success">Remiserias</a>
-		<a href="" class="btn btn-success">Centro de paseos</a>
-		<a href="" class="btn btn-success">Eventos</a>
-		<a href="" class="btn btn-success">Empleos</a>
-		<a href="ingresos/ingfarma.php" class="btn btn-success">Farmacias</a>
-		<a href="" class="btn btn-success">Educación</a>
+	<div class="btn-group">
+		<a href="" class="btn btn-success btn-xs animated swing">Indumentaria</a>
+		<a href="" class="btn btn-success btn-xs animated swing">Gastronomía</a>
+		<a href="" class="btn btn-success btn-xs animated swing">Remiserias</a>
+		<a href="" class="btn btn-success btn-xs animated swing">Centro de paseos</a>
+		<a href="" class="btn btn-success btn-xs animated swing">Eventos</a>
+		<a href="" class="btn btn-success btn-xs animated swing">Empleos</a>
+		<a href="ingresos/ingfarma.php" class="btn btn-success btn-xs animated swing">Farmacias</a>
+		<a href="" class="btn btn-success btn-xs animated swing">Educación</a>
+    <a href="" class="btn btn-success btn-xs animated swing">Números Utiles</a>
+    <a href="" class="btn btn-success btn-xs animated swing">Remiserias</a>
+    <a href="ingresos/inghospitales.php" class="btn btn-success btn-xs animated swing">Hospitales</a>
+    <a href="" class="btn btn-success btn-xs animated swing">Municipalidad</a>
 	</div>
 	</div>
   <div class="container center-block">

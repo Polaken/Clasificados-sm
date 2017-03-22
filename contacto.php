@@ -6,39 +6,39 @@
 <div class="container">
   <?php require_once('resources/navigation.php'); ?>
   <section id="principal">
-            <h1 class="text-center">Solicitud de Información</h1>
+            <h1 class="text-center animated fadeInRightBig">Solicitud de Información</h1>
             <form method="POST" action="send.php" accept-charset="utf-8" class="form-horizontal">
                 <table class="table">
                     <tbody>
                         <tr>
-                            <td><label>Nombre : (*) </label></td>
+                            <td><label class="animated fadeInLeft">Nombre : (*) </label></td>
                             <td><input type="text" name="nombre" id="nombre" size="40" required class="form-control"></td>
                         </tr>
                         <tr>
-                            <td><label>Motivo : </label></td>
+                            <td><label class="animated fadeInLeft">Motivo : </label></td>
                             <td><input type="text" name="empresa" id="empresa" size="30" class="form-control"></td>
                         </tr>
                         <tr>
-                            <td><label>E-Mail : (*)</label></td>
+                            <td><label class="animated fadeInLeft">E-Mail : (*)</label></td>
                             <td><input type="text" name="mail" id="mail" size="50" required class="form-control"></td>
                         </tr>
                         <tr>
-                            <td><label>Consulta : (*)</label></td>
+                            <td><label class="animated fadeInLeft">Consulta : (*)</label></td>
                             <td><textarea rows="20" c ols="60" id="mensaje" name="mensaje" required class="form-control"></textarea></td>
                         </tr>
                         <tr>
                             <td><input style="float: right" type="checkbox" name="novedades" class="checkbox"></td>
-                            <td>¿Desea recibir información como novedades y promociones e n su correo electrónico?
+                            <td>¿Desea recibir información como novedades y promociones en su correo electrónico?
                             </td>
                         </tr>
                         <tr>
-                            <td><label>Ingrese el codigo: (*)</label></td>
+                            <td><label class="animated fadeInLeft">Ingrese el codigo: (*)</label></td>
                             <?php include_once ('includes/recaptcha.php'); ?>
                             <td><div class="g-recaptcha" data-sitekey="6LczdxQUAAAAAEEprNOhg8rDX3gTPhjX0vq9x3Vj"></div></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="submit" name="enviar" id="enviar" value="Enviar Solicitud" class="btn btn-info"></td>
+                            <td><input type="submit" name="enviar" id="enviar" value="Enviar Solicitud" class="btn btn-info btn-1a:hover"></td>
                         </tr>
                     </tbody>
                 </table>

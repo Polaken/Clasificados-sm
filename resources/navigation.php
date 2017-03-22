@@ -1,24 +1,29 @@
 <div class="container">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.php">Clasificados Sm <img src="images\escudo_sm.png" alt="Escudo de San Martin en los Andes" class="img-responsive" style="height:30px; width: 30px; float: right; padding-left: 10px;"></a>
-    </div>
     <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
-        <li><a href="compraven.php">Compra/Venta</a></li>
-        <li><a href="cloth.php">Indumentaria</a></li>
-        <li><a href="gastronomia.php">Gastronomía</a></li>
-        <li><a href="remiserias.php">Remiserias</a></li>
-        <li><a href="centrospaseo.php">Centros de paseo</a></li>
-        <li><a href="eventos.php">Eventos</a></li>
-        <li><a href="employ.php">Empleos</a></li>
-        <li><a href="farma.php" >Farmacias</a></li>
-        <li><a href="edu.php">Educación</a></li>
-        <li><a href="muni.php">Municipalidad</a></li>
-        <li><a href="contacto.php">Contactenos</a></li>
+        <li class="disabled"><a href="compraven.php" class="animated zoomIn">Compra/Venta</a></li>
+        <li><a href="cloth.php" class="animated zoomIn">Indumentaria</a></li>
+        <li><a href="gastronomia.php" class="animated zoomIn">Gastronomía</a></li>
+        <li><a href="centrospaseo.php" class="animated zoomIn">Centros de paseo</a></li>
+        <li class="dropdown"><a class="dropdown-toggle animated zoomIn" data-toggle="dropdown" href="#">Servicios<span class="caret"></span></a>
+        	<ul class="dropdown-menu animated rollIn">
+          		<li><a href="edu.php" class="animated fadeInRight">Educación</a></li>
+          		<li><a href="farma.php" class="animated fadeInLeft">Farmacias</a></li>
+          		<li class="disabled"><a href="employ.php" class="animated fadeInRight">Empleos</a></li>
+              <li><a href="muni.php" class="animated fadeInLeft">Municipalidad</a></li>
+              <li><a href="hospitales.php" class="animated fadeInRight">Hospitales</a></li>
+              <li><a href="remiserias.php" class="animated fadeInLeft">Remiserias</a></li>
+              <li><a href="utiles.php" class="animated zoomIn">Números Utiles</a></li>
+        	</ul>
+      	</li>
+        <li><a href="eventos.php" class="animated zoomIn">Eventos</a></li>
+        <li><a href="eventos.php" class="animated zoomIn">Información</a></li>
+        <li><a href="contacto.php" class="animated zoomIn">Contactenos</a></li>
     </ul>
-    <p style="color: gray; float: right; margin-top: 16px; color: green;"><?php echo FECHA; ?></p>
+    <p><?php echo FECHA; ?></p>
   </div>
 </nav>
 </div>
+
